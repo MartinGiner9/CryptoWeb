@@ -1,0 +1,35 @@
+<h2>Portfolio</h2>
+
+<figure>
+  <blockquote class="blockquote">
+    <h3></h3>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Total balance
+  </figcaption>
+</figure>
+
+<div class="row">
+  <table class="table table-sm table-striped align-middle">
+
+      <tr>
+        <td scope="col" width="5%" class="text-end"></td>
+        <td scope="col" width="20%">Asset</td>
+        <td scope="col" width="15%" class="text-end">Balance</td>
+        <td scope="col" width="15%" class="text-end">Price</td>
+        <td scope="col" width="15%" class="text-end">Quantity</td>
+        <td scope="col" width="15%" class="text-end">Conversions</td>
+        <td scope="col" width="15%" class="text-end">Actions</td>
+      </tr>
+
+      <tr app-tarjeta-wallet *ngFor="let cartera of getCartera()" [cartera]="cartera"></tr>
+    <!-- <app-listadocrypto></app-listadocrypto>-->
+
+
+
+  </table>
+</div>
+
+<div class="row">
+  <button class="btn btn-primary btn-lg">REFRESH</button>
+</div>
